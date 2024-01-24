@@ -5,8 +5,8 @@ import { handleError } from "../utils";
 import { connectToDatabase } from "../mongodb/database";
 import User from "../mongodb/database/models/user.model";
 import Event from "../mongodb/database/models/event.model";
-import { revalidatePath } from "next/cache";
 import Order from "../mongodb/database/models/order.model";
+import { revalidatePath } from "next/cache";
 
 export const createUser = async (user: CreateUserParams) => {
   try {
